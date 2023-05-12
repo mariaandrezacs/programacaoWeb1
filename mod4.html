@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1</title>
+</head>
+<body>
+    <h3>Tabelas e Formulários</h3>
+    <!--
+        table ---------- > define a tabela
+        tr ------------- > define as linhas
+        td ------------- > define as colunas 
+        colspan -------- > para compor uma celula ocupando duas colunas
+        rowspan -------- > para compor uma celula com espaço de duas linha numa coluna
+    -->
+
+    <table>
+        <tr>
+            <td>Célula 1, Linha 1</td>
+            <td>Célula 2, Linha 1</td>
+        </tr>
+        <tr>
+            <td>Célula 3, Linha 2</td>
+            <td>Célula 4, Linha 2</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    
+
+    <!--
+        EXEMPLO DA AULA 
+            <html>
+            <head>
+                <title>Tabela</title>
+            </head>
+            <body>
+                <header><h1>Curso de HTML</h1></header>
+                <nav></nav>
+                <section>
+                    <table border='1'>
+                        <tr>
+                            <td>Coluna, Linha 1</td>
+                            <td rowspan="2">Coluna 2</td>
+                        </tr>
+                        <tr>
+                            <td>Coluna 1, Linha 2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Linha 3</td>
+                        </tr>
+                    </table>
+                </section>
+                <footer></footer>
+            </body>
+        </html>
+    
+
+    
+
+    <!--  Tabela com cabeçalho e rodapé  -->
+    <table>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>R$ 180,00</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$ 80,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!--
+        Formularios
+        Parametros: 
+            action -- > enviar os dados para determinada rota
+            autocomplete -- > auto completar para quando for acessar novamente
+            enctype -- > envio de arquivo
+            method -- > 
+            name -- > nome no arquivo 
+            novalidate -- > não validar 
+            target -- > abrir uma o link em uma nova aba
+    -->
+
+    <!--
+        Input 
+        Parametros: 
+            autocomplete 
+            autofocus
+            disabled -- > desabilita
+            max
+            maxlength -- > max de caracteres
+            textarea -- > textos mais longos
+            min
+            name
+            pattern -- > define um padrao para o dado
+            placeholder -- > orienta o usuario
+            readonly -- > somente leitura
+            required -- > campo obrigatorio
+            size -- > 
+            type
+            value -- > dado pre definido
+    -->
+
+    <!--
+        Textarea
+        Parametros 
+            autofocus
+            cols
+            disabled
+            maxlength
+            name
+            placeholder
+            readonly
+            required
+            rows
+            wrap
+    -->
+    <form action="https://formspree.io/f/mayzkqzr" method="post">
+        Nome: <input type="text" name="nome" placeholder="Informe o seu nome" value="Joana" required> <br><br>
+        Email: <input type="text" name="email"> <br><br>
+        CPF: <input type="text" name="cpf" maxlength="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"> <br><br>
+        Password: <input type="password"> <br><br>
+        Descrição: <textarea name="descricao"></textarea>
+
+    </form>
+
+    <hr>
+
+    <!--
+        Botoes
+        Paramentros
+            autofocus
+            disabled
+            name
+            type: button, reset, submit
+            value
+    -->
+    <h3>Botões</h3>
+    <form action="https://formspree.io/f/mayzkqzr" method="POST">
+        login: <input type="text" name="login"> <br><br>
+        senha: <input type="password"> <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <hr>
+    <!--
+        Rótulos e Agrupamento de campos
+
+        Fieldset
+
+        Campos de Seleção
+    -->
+
+    <form action="">
+        <label for="homem">Homem</label>
+        <input type="radio" name="sexo" id="homem" value="homem">
+        <label for="mulher">Homem</label>
+        <input type="radio" name="sexo" id="mulher" value="mulher">
+    </form>
+
+    <hr>
+
+    <fieldset>
+        <legend>Dados pessoais: </legend>
+        Nome: <input type="text"> <br>
+        Email: <input type="text"> <br>
+        Nascimento: <input type="text">
+    </fieldset>
+
+    <hr>
+
+    <div>
+        <h3>Campos de Seleção</h3>
+
+        <form action="">
+            Qual curso você faria? <br>
+            <input type="checkbox" name="html" value="1" checked> HTML <br>
+            <input type="checkbox" name="css" value="1"> CSS <br>
+            <input type="checkbox" name="javascript" value="1"> JAVASCRIPT
+
+        </form>
+
+        <hr>
+
+        <form action="">
+            Você prefere?  <br>
+            <input type="radio" name="sistema" value="android" checked> Android <br>
+            <input type="radio" name="sistema" value="ios"> IOS <br>
+
+        </form>
+
+        <hr>
+
+        <form action="">
+        Qual curso você faria? <br>
+            <select name="curso" >
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JAVASCRIPT</option>
+            </select>
+    </form>
+    </div>
+    
+
+</body>
+</html>
