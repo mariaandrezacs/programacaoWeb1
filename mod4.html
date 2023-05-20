@@ -220,7 +220,63 @@
             </select>
     </form>
     </div>
-    
+
+    <div>
+        <h3>Novos Campos - Email</h3>
+        <form action="post" action="recebe.php">
+            <input type="email" name="email">
+        </form>
+
+        <hr>
+
+        <h3>Data</h3>
+        <form action="post" action="recebe.php">
+            <input type="date" name="data">
+        </form>
+
+        <hr>
+
+        <h3>Escala</h3>
+        <form action="post" action="recebe.php">
+            <input type="range" name="faixa">
+        </form>
+
+        <hr>
+
+        <h3>Cor</h3>
+        <form action="post" action="recebe.php">
+            <input type="color" name="cor">
+        </form>
+
+        <hr>
+
+        <h3>Lista</h3>
+        <form action="post" action="recebe.php">
+            <input list="cursos" name="curso">
+                <datalist id="cursos">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <datalist value="JAVASCRIPT"> 
+                </datalist>
+        </form>
+
+        <hr>
+        <!--
+            20 de maio de 2023
+        -->
+        <h3>Oculto</h3>
+        <form action="post" action="recebe.php">
+           <input type="hidden" name="id" value="123">
+        </form>
+
+        <hr>
+
+        <h3>Arquivo</h3>
+        <form action="post" action="recebe.php" enctype="multipart/form-data">
+           <input type="file" name="arquivo">
+        </form>
+
+    </div>
 
 </body>
 </html>
