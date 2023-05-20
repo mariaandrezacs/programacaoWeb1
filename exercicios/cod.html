@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <TITLE>INPUT TYPES: CHECKBOX e RADIO</TITLE>
+
+        <h1>CHECKBOX e RADIO</h1>
+        <p>
+        <hr><p>
+        <h3>CHECKBOX</h3>
+
+        Usado para quest&otilde;es de sim/n&atilde;o (&quot;quest&otilde;es de marcar x&quot), sendo representado por um bot&atilde;o, que &eacute <b>marcado/desmarcado quando clicado</b>.<p>
+
+        Mais de uma op&ccedil;&atilde;o com mesmo atributo NAME e diferentes atributos VALUES podem ser selecionadas, simulando uma Lista de Sele&ccedil;&atilde;o M&uacute;ltipla.
+        <p>
+        Quando temos  muitas op&ccedil;&otilde;es &eacute mais recomendado o uso da <A HREF="cod1.html">Lista de Sele&ccedil;&atilde;o M&uacute;ltipla</a>.
+
+        <p>
+        <form>
+        <B>Quais</B> dos esportes abaixo voc&ecirc pratica?<Br>
+        <INPUT TYPE="checkbox" NAME="esporte" VALUE="natacao"> nata&ccedil;&atilde;o
+        <INPUT TYPE="checkbox" NAME="esporte" VALUE="ginastica"> gin&aacute;stica
+        <INPUT TYPE="checkbox" NAME="esporte" VALUE="volei"> v&ocirc;lei
+        <INPUT TYPE="checkbox" NAME="esporte" VALUE="futebol"> futebol
+        </form>
+
+        <P>
+        <hr> <p>
+
+        <h3>RADIO</h3>
+
+        Similar ao CHECKBOX, mas no RADIO somente uma op&ccedil;&atilde;o pode ser selecionada.<p>
+        Quando uma op&ccedil;&atilde;o RADIO &eacute marcada, esta s&oacute ser&aacute desmarcada quando outra op&ccedil;&atilde;o RADIO com mesmo <b>NAME</b> for selecionada.<p>
+
+        O INPUT tipo RADIO &eacute melhor empregado quando queremos representar poucas op&ccedil;&otilde;es. No caso de termos muitas op&ccedil;&otilde;es &eacute mais recomendado o uso do <A HREF="tut22.html">MENU</a>.
+        <P>
+
+        <form>
+        Qual o seu sexo?<br>
+        <INPUT TYPE="RADIO" NAME="sexo" VALUE="fem"> feminino 
+        <INPUT TYPE="RADIO" NAME="sexo" VALUE="masc"> masculino <br>
+
+        </form>
+
+        <P>
+        <p>
+        <hr> <p>
+        <h3>Atributos V&aacute;lidos do Identificador INPUT para CHECKBOX e RADIO.</h3>
+
+        <ul>
+        <li><b>NAME:</b> &eacute o nome simb&oacute;lico deste campo do formul&aacute;rio. 
+        <p>
+        <ul>
+        <li>Exemplo 1: usando CHECKBOX para simular uma Lista de Sele&ccedil;&atilde;o M&uacute;ltipla.
+        <p>
+
+            &lt;form&gt;<br>
+
+
+            &lt;INPUT TYPE="checkbox"<b> NAME="OPCAO" VALUE="op1"</b>&gt; op&ccedil;&atilde;o1<BR>
+            &lt;INPUT TYPE="checkbox" <b>NAME="OPCAO" VALUE="op2"</b>&gt; op&ccedil;&atilde;o2<BR>
+            &lt;INPUT TYPE="checkbox"<b> NAME="OPCAO" VALUE="op3"</b>&gt; op&ccedil;&atilde;o3<BR>
+            &lt;/form&gt;
+
+        <P>
+            <form>
+
+
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> op&ccedil;&atilde;o1<br>
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> op&ccedil;&atilde;o2<br>
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"> op&ccedil;&atilde;o3<br>
+            </form>
+
+        <li>Exemplo3: 
+        Como j&aacute vimos acima, uma op&ccedil;&atilde;o tipo RADIO  s&oacute &eacute desmarcada quando outra op&ccedil;&atilde;o RADIO com mesmo NAME for selecionada.<p>
+
+        &lt;form&gt;<br>
+
+
+        &lt;INPUT TYPE="RADIO" <b>NAME="OPCAO"</b> VALUE="op1"&gt; op&ccedil;&atilde;o1<br>
+        &lt;INPUT TYPE="RADIO" <b>NAME="OPCAO"</b> VALUE="op2"&gt; op&ccedil;&atilde;o2
+        <br>
+        &lt;/form&gt;
+
+        <form>
+        <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> op&ccedil;&atilde;o1
+        <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> op&ccedil;&atilde;o2
+        </form>
+        <p>
+        &lt;form&gt;<br>
+
+
+        &lt;INPUT TYPE="RADIO" <b>NAME="OPCAO1"</b> VALUE="op1"&gt; op&ccedil;&atilde;o1<br>
+        &lt;INPUT TYPE="RADIO" <b>NAME="OPCAO2"</b> VALUE="op2"&gt; op&ccedil;&atilde;o2
+        <br>
+        &lt;/form&gt;
+
+        <form>
+        <INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1"> op&ccedil;&atilde;o 1
+        <INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="op2"> op&ccedil;&atilde;o 2
+        </form>
+        </ul>
+        <P>
+        <hr>
+        <p>
+        <li><b>VALUE:</b>&eacute um atributo obrigat&oacute;rio que  especifica o valor do INPUT   quando este bot&atilde;o &eacute selecionado (bot&otilde;es n&atilde;o selecionados s&atilde;o desconsiderados durante a submiss&atilde;o dos dados). O valor <i>default</i> para "checkbox" e "radio" &eacute  <i>on</i>.<p>
+        Se muitos bot&otilde;es RADIO tiverem <B>mesmo NAME </B>e <B>nenhum atributo VALUE </B>especificado, todos assumir&atilde;o <b>o mesmo valor <i>default</i> on</B>, e o servidor n&atilde;o ser&aacute capaz de dizer qual bot&atilde;o est&aacute selecionado.<p>
+
+
+
+        <p>
+        <hr>
+        <p>
+        <li><b>CHECKED:</b> especifica que este bot&atilde;o "checkbox" ou "radio" &eacute selecionado por 
+        <i>default</i>. <P>
+
+        <UL>
+        <LI>Exemplo 4:<p>
+            &lt;form&gt;<br>
+
+
+            &lt;INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"&gt; opcao1<BR>
+            &lt;INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2" <b>CHECKED</b>&gt; opcao2<BR>
+            &lt;INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"&gt; opcao3<BR>
+            &lt;/form&gt;
+
+        <P>
+            <form>
+
+
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> opcao1<br>
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"CHECKED> opcao2<br>
+            <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"> opcao3<br>
+            </form>
+
+            
+
+        <LI>Exemplo 5:<p>
+            &lt;form&gt;
+        <BR>
+            &lt;INPUT TYPE="radio" NAME="OPCAO" VALUE="op1" <b>CHECKED&gt; op&ccedil;&atilde;o1</b><BR>
+            &lt;INPUT TYPE="radio" NAME="OPCAO" VALUE="op2"&gt; op&ccedil;&atilde;o2<BR>
+            &lt;INPUT TYPE="radio" NAME="OPCAO" VALUE="op3"&gt; op&ccedil;&atilde;o3<BR>
+            &lt;/form&gt;
+
+        <P>
+            <form>
+
+
+            <INPUT TYPE="radio" NAME="OPCAO" VALUE="op1" CHECKED> op&ccedil;&atilde;o1<br>
+            <INPUT TYPE="radio" NAME="OPCAO" VALUE="op2"> op&ccedil;&atilde;o2<br>
+            <INPUT TYPE="radio" NAME="OPCAO" VALUE="op3"> op&ccedil;&atilde;o3<br>
+            </form>
+
+            
+        </UL>
+        </ul>
+        <hr>
+        <p>
+        <h3>Exerc&iacute;cios</h3>
+        <p>
+
+        <form method="post" ACTION="resp2.cgi">
+        1.Qual dos tipos de INPUT abaixo  &eacute representado por um bot&atilde;o, que &eacute marcado/desmarcado quando clicado?
+        <p>
+        <INPUT TYPE="radio" NAME="Q1" VALUE="rad" CHECKED> RADIO<br>
+        <INPUT TYPE="radio" NAME="Q1" VALUE="check"> CHECKBOX<br>
+        <p>
+
+        2.Qual dos tipos de INPUT abaixo &eacute representado por um bot&atilde;o, que quando marcado s&oacute &eacute desmarcado quando outro bot&atilde;o de mesmo TYPE e NAME &eacute selecionado?
+        <p>
+        <INPUT TYPE="radio" NAME="Q2" VALUE="rad" CHECKED> RADIO<br>
+        <INPUT TYPE="radio" NAME="Q2" VALUE="check"> CHECKBOX<br>
+        <p>
+
+        3.Qual dos tipos de INPUT abaixo permite que mais de uma op&ccedil;&atilde;o de mesmo TYPE e NAME sejam selecionadas?
+        <p>
+        <INPUT TYPE="radio" NAME="Q3" VALUE="rad" CHECKED> RADIO<br>
+        <INPUT TYPE="radio" NAME="Q3" VALUE="check"> CHECKBOX<br>
+        <p>
+
+        4.Qual dos tipos de INPUT abaixo n&atilde;o permite que mais de uma op&ccedil;&atilde;o de mesmo TYPE e NAME sejam selecionadas?
+        <p>
+        <INPUT TYPE="radio" NAME="Q4" VALUE="rad" CHECKED> RADIO<br>
+        <INPUT TYPE="radio" NAME="Q4" VALUE="check"> CHECKBOX<br>
+        <p>
+
+
+        5. Qual o &uacute;nico atributo n&atilde;o obrigat&oacute;rio para os INPUTS tipo CHECKBOX e RADIO, e que permite a sele&ccedil;&atilde;o de uma op&ccedil;&atilde;o automaticamente?
+        <p>
+        <INPUT TYPE="radio" NAME="Q5" VALUE="name" CHECKED> NAME<br>
+        <INPUT TYPE="radio" NAME="Q5" VALUE="value"> VALUE <br>
+        <INPUT TYPE="radio" NAME="Q5" VALUE="checked"> CHECKED<br>
+
+
+        <p>
+
+        <INPUT TYPE="submit" VALUE="Conferir respostas"> 
+        
+        <Input TYPE="reset" VALUE="Cancelar">
+        </form>
+        <p>
+        <hr>
+        <p>
+
+
+
+        <a href="tut211.html"><img src = "/figuras/setae_cy.gif"></a> <a href="tut0.html"> <img src ="/figuras/go_to.gif"></a> <a href="tut213.html"><img src = "/figuras/setad_cy.gif"></a>
+
+
+
+</body>
+</html>

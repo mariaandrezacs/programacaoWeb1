@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<title>O identificador SELECT </title>
+
+<h1>O Identificador SELECT </h1>
+<hr>
+<p>
+
+Ao contr&aacute;rio do INPUT, o SELECT tem n&atilde;o s&oacute um identificador de abertura, mas tamb&eacute;m um identificador de encerramento. Dentro do SELECT podemos ter apenas uma sequ&ecirc;ncia de identificadores OPTION.
+<pre><b>
+	&lt;SELECT&gt;
+             &lt;OPTION&gt;
+             &lt;OPTION&gt;
+	     &lt;OPTION&gt;
+        &lt;/SELECT&gt;
+</b>
+</b></pre>
+        
+<p>
+<hr>
+<p>
+<h3>Atributos do SELECT</h3>
+
+<ul>
+<li><b>NAME:</b> &eacute o nome simb&oacute;lico para este elemento SELECT, usado durante a sua submiss&atilde;o.
+<p>
+Durante a submiss&atilde;o, caso o atributo VALUE n&atilde;o seja especificado, o <b><i>VALUE</i></b> correspondente a este <b><i>NAME</i></b> ser&aacute representado pela OPTION selecionada.<p>
+
+
+Exemplo 1:<p>
+
+&lt;form&gt;<br>
+	&lt;SELECT <b>NAME = "frutas"</b>&gt;<Br>
+	&lt;OPTION&gt;laranja<br>
+        &lt;OPTION&gt;ma&ccedil;&atilde<br>
+	<b>&lt;OPTION&gt;uva<br></b>
+        &lt;OPTION&gt;pera<br>
+        &lt;/SELECT&gt;<br>
+	&lt;/form&gt;<p>
+
+Se a op&ccedil;&atilde;o uva for selecionada, ent&atilde;o, teremos  o seguinte par durante a submiss&atilde;o dos dados ao programa cgi:<p>
+<b>...&frutas=uva&...</b><p>
+
+ou seja, name=frutas e value=uva
+
+<P><HR><P>
+
+<li><b>VALUE:</b> especifica o valor da op&ccedil;&atilde;o, quando esta &eacute; selecionada
+e submetida a um cgi. 
+
+<li><b>SIZE:</b> se o tamanho &eacute 1 ou n&atilde;o &eacute informado, o SELECT ser&aacute representado como um <B>Menu de Op&ccedil;&otilde;es</B>. Se o tamanho for maior ou igual a 2, 
+o SELECT ser&aacute representado como uma <B>Lista de Rolamento</B>, e o valor de SIZE determinar&aacute quantos itens ser&atilde;o vis&iacute;veis.
+<p>
+
+<li>Exemplo 2: MENU (SIZE=1)<p>
+&lt;form&gt;<br>
+	&lt;SELECT NAME = "menu" <b>SIZE=1</b>&gt;<br>
+        &lt;OPTION&gt;uma op&ccedil;&atilde;o...<br>
+        &lt;OPTION&gt;outra op&ccedil;&atilde;o...<Br>
+        &lt;/SELECT&gt;<br>
+	&lt;/form&gt;<p>
+
+	<form>
+	<SELECT NAME = "menu" SIZE = 1>
+        <OPTION>uma op&ccedil;&atilde;o...
+        <OPTION>outra op&ccedil;&atilde;o...
+        </SELECT>
+	</form>
+
+<li>Exemplo 3: Lista de Rolamento (SIZE > 1)<p>
+<p>
+&lt;form&gt;<br>
+	&lt;SELECT NAME = "lista"<b> SIZE=3</b>&gt;<Br
+        &lt;OPTION&gt;opcao 1<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 2<br>
+	&lt;OPTION&gt;op&ccedil;&atilde;o 3<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 4<br>
+	&lt;OPTION&gt;op&ccedil;&atilde;o 5<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 6<br>
+
+        &lt;/SELECT&gt;<br>
+	&lt;/form&gt;<p>
+
+	<form>
+	<SELECT NAME = "lista" SIZE=3>
+        <OPTION>op&ccedil;&atilde;o 1
+        <OPTION>op&ccedil;&atilde;o 2
+	<OPTION>op&ccedil;&atilde;o 3
+        <OPTION>op&ccedil;&atilde;o 4
+	<OPTION>op&ccedil;&atilde;o 5
+        <OPTION>op&ccedil;&atilde;o 6
+
+        </SELECT>
+	</form>
+
+
+
+
+<P><HR><P> 
+<li><a name = Multiple><b>MULTIPLE:</b></a> n&atilde;o necessita de valor associado. Quando presente, especifica que o SELECT permite sele&ccedil;&otilde;es m&uacute;ltiplas (Lista de sele&ccedil;&otilde;es m&uacute;ltiplas). A presen&ccedil;a do atributo MULTIPLE or&ccedil;a representa&ccedil;&atilde;o do SELECT como uma lista de rolamento, independentemente do valor do atributo SIZE.<p>
+<ul>
+<li>Exemplo 4: Multiple Select<p>
+
+&lt;form&gt;<br>
+	&lt;SELECT NAME = "lista" SIZE=3 <b>MULTIPLE</b>&gt;<br>
+        &lt;OPTION SELECTED&gt;opcao 1<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 2<br>
+	&lt;OPTION SELECTED&gt;op&ccedil;&atilde;o 3<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 4<br>
+	&lt;OPTION&gt;op&ccedil;&atilde;o 5<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 6<br>
+
+        &lt;/SELECT&gt;<br>
+	&lt;/form&gt;<p>
+
+	<form>
+	<SELECT NAME = "lista" SIZE=3 MULTIPLE>
+        <OPTION SELECTED>op&ccedil;&atilde;o 1
+        <OPTION>op&ccedil;&atilde;o 2
+	<OPTION SELECTED>op&ccedil;&atilde;o 3
+        <OPTION>op&ccedil;&atilde;o 4
+	<OPTION>op&ccedil;&atilde;o 5
+        <OPTION>op&ccedil;&atilde;o 6
+        </SELECT>
+	</form>
+
+
+</ul>
+</ul>
+
+<hr>
+<p>
+
+<h3>Atributos do OPTION</h3>
+<ul>
+<li><b>SELECTED:</b> especifica que esta op&ccedil;&atilde;o &eacute selecionada por <i>default</i>. Se 
+o SELECT permitir m&uacute;ltiplas sele&ccedil;&otilde;es, m&uacute;ltiplas op&ccedil;&otilde;es poder&atilde;o 
+ser especificadas como SELECTED.<p>
+
+<li>Exemplo 1: MENU<p>
+<p>
+	&lt;form&gt;<br>
+	&lt;SELECT NAME = "menu"&gt;<br>
+        &lt;OPTION&gt;uma op&ccedil;&atilde;o...<br>
+    <b> &lt;OPTION SELECTED&gt;outra op&ccedil;&atilde;o...</b><Br>
+        &lt;/SELECT&gt;<br>
+	&lt;/form&gt;<p>
+
+<p>	<form>
+	<SELECT NAME = "menu">
+        <OPTION>uma op&ccedil;&atilde;o...
+        <OPTION SELECTED>outra op&ccedil;&atilde;o...
+        </SELECT>
+	</form><p>
+
+
+<li>Exemplo 2: Lista de Rolamento<p>
+	&lt;form&gt;<br>
+	&lt;SELECT NAME = "lista" SIZE=3 MULTIPLE&gt;<br>
+    <b>    &lt;OPTION SELECTED&gt;op&ccedil;&atilde;o 1</b><br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 2<br>
+	&lt;OPTION&gt;op&ccedil;&atilde;o 3<br>
+        &lt;OPTION&gt;op&ccedil;&atilde;o 4<br>
+	&lt;OPTION&gt;op&ccedil;&atilde;o 5<br>
+   <b>     &lt;OPTION SELECTED&gt;op&ccedil;&atilde;o 6</b><br>
+
+        &lt;/SELECT&gt;<br>
+	&lt;/form&gt;<p>
+
+	<form>
+	<SELECT NAME = "lista" SIZE=3>
+        <OPTION SELECTED>op&ccedil;&atilde;o 1
+        <OPTION>op&ccedil;&atilde;o 2
+	<OPTION>op&ccedil;&atilde;o 3
+        <OPTION>op&ccedil;&atilde;o 4
+	<OPTION>op&ccedil;&atilde;o 5
+        <OPTION SELECTED>op&ccedil;&atilde;o 6
+
+        </SELECT>
+	</form><p>
+
+</ul>
+
+</ul>
+
+<P><HR><P>	
+
+<h3>Exerc&iacute;cios:</h3>
+
+<form method="POST" ACTION="resp4.cgi">
+
+1.Quando o SELECT &eacute representado como um Menu de Op&ccedil&otilde;es?<p>
+<select name="q1">
+<option>Nenhuma das alternativas
+<option>Quando SIZE = 1
+<option>Quando SIZE > 1
+<option>Quando SIZE >= 1
+</SELECT><p>
+
+2.Quando o SELECT &eacute representado como uma Lista de Rolamento ?<p>
+<select name="q2">
+<option>Nenhuma das alternativas
+<option>Quando SIZE = 1
+<option>Quando SIZE > 1
+<option>Quando SIZE >= 1
+</SELECT><p>
+
+
+3.Quando o SELECT &eacute representado como uma Lista de Rolamento com Sele&ccedil;&otilde;es M&uacute;ltiplas?<p>
+<select name="q3">
+<option>Quando SIZE > 1
+<option>Quando SIZE >= 3
+<option>Quando o atributo MULTIPLE está presente
+<option>Nenhuma das alternativas
+</SELECT><p>
+
+4.Quando podemos ter, dentro de um SELECT, mais de um OPTION com o atributo SELECTED? <p>
+<select name="q4">
+<option>Quando temos mais de um OPTION
+<option>Quando o atributo MULTIPLE est&aacute presente
+<option>Quando SIZE > 1
+<option>Nenhuma das alternativas
+</SELECT><p>
+
+
+
+5.Que valor ser&aacute atribu&iacute;do a <i>value</i> (no par name=value) durante a submiss&atilde;o de um identificador SELECT ao programa cgi, caso o atributo VALUE n&atilde;o seja especificado?<p>
+<select name="q5">
+<option>O valor do atributo VALUE
+<option>não será atribuído nenhum valor
+<option>O valor do OPTION selecionado
+<option>Nenhuma das alternativas
+</SELECT><P>
+
+<INPUT TYPE="submit" VALUE="Conferir respostas"> 
+ 
+<Input TYPE="reset" VALUE="Cancelar">
+</form>
+<p><hr><p>
+
+<a href="tut214.html"><img src = "/figuras/setae_cy.gif"></a> <a href="tut0.html"> <img src ="/figuras/go_to.gif"></a> <a href="tut23.html"><img src = "/figuras/setad_cy.gif"></a>
+
+
+
+</body>
+</html>
