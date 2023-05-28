@@ -35,6 +35,12 @@ h1 {
 ul {
     font-family: Arial;
     font-size: 12pt;
-    list-style-image: url(bolo.png);
+    list-style-image: url();
     list-style-position: inside;
 }
+
+/* 
+.doce {
+    list-style-image: url());
+}
+*/
