@@ -1,0 +1,73 @@
+/* 2.2 Formatação de fontes */
+
+/* Texto: alinhamento e espaço */
+/* ProgWeb2023A 2 CSS  2.2 Formatação de fontes */
+#p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    letter-spacing: 0.5em; /*define o espaço entre as letras*/
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* UNIDADES DE TAMANHO: 
+    Relativo
+        - %
+        - em 
+        - ex
+        - px
+    Absoluto
+        - in
+        - cm 
+        - mm
+        - pt
+        - pc 
+*/
+.inferior {
+    text-decoration: underline;
+}
+
+.superior {
+    text-decoration: overline;
+}
+
+.centro {
+    text-decoration: line-through;
+}
+
+.pisca {
+    text-decoration: blink;
+}
+
+/* Recuo do paragrafo */
+
+#h {
+    font-family: sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#p2 {
+    font-family: Arial;
+    font-size: 12pt;
+    text-align: justify;
+    text-indent: 30pt;
+}
+
+/* Sombras e letras maiusculas e minusculas */ 
+#h1 {
+    font-family: sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-shadow: blue 5px 6px 2px;
+    text-transform: capitalize;
+}
+
+#p3 {
+    font-family: Arial;
+    font-size: 12pt;
+    text-align: justify;
+    text-indent: 30pt;
+    white-space: rowrap;
+    word-spacing: 0.5em;
+}

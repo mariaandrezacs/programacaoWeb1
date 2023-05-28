@@ -1,0 +1,40 @@
+/*
+a:link {
+    background-color: #b2ff99;
+    color: blue;
+}
+
+a:visited {
+    background-color: #ffff85;
+    color: red;
+}
+
+a:hover {
+    background-color: #77704D;
+    color: green;
+}
+
+a:active {
+    background-color: #ff704D;
+    color: gray;
+}
+*/
+/* Lista com Imagens */ 
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: red;
+}
+
+ul {
+    font-family: Arial;
+    font-size: 12pt;
+    list-style-image: url(bolo.png);
+    list-style-position: inside;
+}

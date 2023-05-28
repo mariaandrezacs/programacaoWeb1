@@ -1,0 +1,21 @@
+/* Crie um arquivo CSS, com a seguinte formatação:
+
+identificador "id1": Verdana, azul
+classe "classeA": Tahoma, cinza "#333333".
+body: Arial, preto
+*/
+
+#id1 {
+    font-family: Verdana;
+    color: blue;
+    }
+
+.classeA {
+    font-family: Tahoma;
+    color: #333333;
+    }
+
+body {
+    font-family: Arial;
+    color: black;
+    }
