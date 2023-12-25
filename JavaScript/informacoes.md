@@ -12,7 +12,7 @@
     4.7.1 Código-fonte: laços de repetiçãoPasta                         --
 - 4.8 Para atéPágina                                                    --
     4.8.1 Código-fonte: para atéPasta                                   --
-    
+
 4.10 Teste seus conhecimentosQuestionário                               --
 
 
@@ -20,20 +20,45 @@
 
 ## Eventos e validação de formulário
 
-- 4.11 EventosPágina
-- 4.12 onLoadPágina
-    4.12.1 Código-fonte: onLoadPasta
-- 4.13 onClickPágina
-    4.13.1 Código-fonte: onClickPasta
-- 4.14 Outros eventos de entradaPágina
-    4.14.1 Código-fonte: outros eventos de entradaPasta
-- 4.15 Eventos do mousePágina
-    4.15.1 Código-fonte: eventos do mousePasta
-- 4.16 Validação de formuláriosPágina
-    4.16.1 Código-fonte: validação de formuláriosPasta
-- 4.17 Exemplo de cálculo do IMCPágina
-    4.17.1 Código-fonte: cálculo do IMCPasta
-- 4.18 Exemplo de transformação de letraPágina
-    4.18.1 Código-fonte: transformação de letraPasta
+- 4.11 Eventos                                                
+    - Load, Click, Input, Mouse
+    - Load
+        - onLoad: quando a página ou imagem é carregada
+        - onResize: quando a janela do navegador é redimensionada 
+    - Click
+        - onClick: quando o elemento é clicado 1 vez
+        - onDblClick: quando o elemento é clicado 2 vezes (clique rápido)
+    - Input
+        - onBlur: quando sai do campo
+        - onChange: quando muda o conteúdo do campo
+        - onFocus: quando entra no campo
+        - onSelect: quando um texto é selecionado
+        - onSubmit: quando o formulário é submetido
+        - onReset: quando o botão de reset é clicado
+        - onKeyDown: quando pressionada a tecla
+        - onKeyUp: quando solta a tecla pressionada
+    - Mouse 
+        - onMouseOver: passando o mouse sobre o elemento
+        - onMouseOut: saindo do elemento
+        - onMouseDown: pressionando o botão do mouse sobre o elemento
+        - onMouseUp: soltando o botão do mouse do elemento
+        - onMouseMove: movimentando o mouse sobre o elemento
 
-4.20 Teste seus conhecimentosQuestionário
+                      
+## Bibliotecas
+- Introdução a bibliotecas
+    códigos desenvolvidos por programadores a fim de facilitar e automatizar o desenvolvimento de sites / sistemas web. 
+
+Como funciona? 
+1. baixar o arquivo e colocar em uma pasta * css/ * js/ index.html
+2. adiconar na pagina 
+    <script src="meu_codigo.js"></script>
+    <link rel="stylesheet" href="style.css">
+3. chamar as funcionalidades na pagina 
+
+- Biblioteca SweetAlert
+http://t4t5.github.io/sweetalert/
+http://mathjs.org/ 
+http://www.dropzonejs.com/ 
+http://stickerjs.cmiscm.com/
+http://formatjs.io/
